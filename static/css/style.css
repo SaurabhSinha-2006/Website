@@ -1,77 +1,68 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Mulish', sans-serif;
-    transition: 0.3s all ease-in-out;
-   }
-   body{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-   background-color: #fff;
-   background-image: url('/../static/3.jpg');
-   background-size: cover;
-   }
-   .shadow-wrap{
-    border-radius: 5px;
-    padding: 25px;
-    background-color:#F0F2FB;
-   }
-   .form-wrap{
-    background-color: #fff;
-   padding: 70px;
+body {
+    background-color: #1a1a2e; /* Deep navy */
+    color: #f4e8c1; /* Soft gold */
+}
 
-   }
-   .form-wrap form *{
-    display: block;
-    width: 100%;
-   }
-   .form-wrap form label{
-   margin-bottom: 5px;
-   font-size: 14px;
-   font-weight: 700;
-   line-height: 26px; 
-   }
-   .form-wrap form input{
-   padding: 12px 20px;
-   border-radius: 5px;
-   border: 1px solid #DAE1F5;
-   background: #FFF; 
-   color: #5a668c; 
-   }
-   #id_username{
-    margin-bottom: 20px;
-   }
-   .form-wrap button{
-    border-radius: 5px;
-   background: #000000;
-   color: #FFF;
-   cursor: pointer;
-   text-align: center;
-   font-size: 16px;
-   padding: 12px 68px;
-   font-weight: 700;
-   border: 1px solid transparent;
-   margin-top: 30px;
-   line-height: 26px; 
-   }
-   .signup-link{
-    color: #10182F;
-    font-size: 15px;
-    margin-top: 20px;
+.navbar, .carousel-control-prev, .carousel-control-next {
+    background-color: #1a1a2e; /* Match body background */
+}
+
+.carousel-caption h5, .carousel-caption p {
+    color: #f4e8c1; /* Gold for captions */
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8); /* Add shadow for readability */
+}
+
+.card {
+    background-color: #232946; /* Dark charcoal */
+    color: #f4e8c1; /* Soft gold */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Premium shadow effect */
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    color: #f4e8c1; /* Gold text */
+}
+
+.buy-button {
+    background-color: #f4e8c1; /* Gold */
+    color: #1a1a2e; /* Navy text */
+    padding: 10px 20px;
     text-align: center;
-    line-height: 25px;
-    display: block;
-   text-decoration: none;
-   }
-   .signup-link:hover{
-    text-decoration: underline;
-   }
-   .form-wrap button:hover{
-    background-color: #fff;
-    color: #10182F;
-    border-color: #10182F;
-   
-   }
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #1a1a2e; /* Inverse hover */
+    color: #f4e8c1; /* Gold text on hover */
+}
+
+.text-muted {
+    color: #f4e8c1; /* Replace muted text with soft gold */
+}
+
+.carousel-indicators li {
+    background-color: #f4e8c1; /* Gold for indicators */
+}
+
+.carousel-indicators .active {
+    background-color: #d4af37; /* Bright gold for the active indicator */
+}
+
+
+.fixed-height {
+    height: 300px; /* Set the desired height */
+    object-fit: cover; /* Ensures images scale properly within the set height */
+    width: 100%; /* Ensures images occupy the full width of their container */
+}
+
+
+

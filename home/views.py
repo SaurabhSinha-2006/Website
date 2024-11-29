@@ -6,6 +6,8 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from .models import Product, CartItem
 from django.http import JsonResponse
+from django.conf import settings
+from django.shortcuts import redirect
 # Create your views here.
 @login_required
 def index(request):
@@ -91,6 +93,12 @@ def remove_from_cart(request, item_id):
         return JsonResponse({"status": "error", "message": "product does not exist in the cart."})
     return redirect("/about")
 
+
+def error_404_view(request, exception):
+   
+    # we add the path to the 404.html file
+    # here. The name of our HTML file is 404.html
+    return render(request, '404.html')
 
 
 

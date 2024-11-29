@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8d7da;
+            color: #721c24;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            border: 1px solid #f5c6cb;
+            background-color: #f8d7da;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .message {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #721c24;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-link:hover {
+            background-color: #f1b0b7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Oops! Something Went Wrong.</div>
+        <div class="message">The page you are looking for could not be found or there was an error processing your request.</div>
+        <a href="/" class="back-link">Go Back Home</a>
+    </div>
+</body>
+</html>
