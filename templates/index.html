@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
 
+
 {% block title %}Home{% endblock title %}
 
 {% block body %}
+
 <div class='container-fluid my-4 px-4'>
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -52,7 +54,30 @@
       <div class="row"> 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="static/product 1.png" class="d-block w-100" alt="...">
+            <style>
+             
+              .carousel-container {
+                width: 100%; /* Full width */
+                height: 300px; /* Set desired height */
+                overflow: hidden; /* Hide overflow for consistency */
+                position: relative; /* Position relative for alignment */
+              }
+          
+              /* Style for the image */
+              .carousel-container img {
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                object-fit: cover; /* Maintain aspect ratio and fill container */
+              }
+            </style>
+            <style>
+              .card-text {
+                  text-align: justify;
+              }
+          </style>
+            <div class="carousel-container">
+              <img src="static/product 1.png" alt="Product Image">
+            </div>
 
 
             <div class="card-body">
@@ -68,7 +93,9 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="static/product 21.png" class="d-block w-100" alt="...">
+            <div class="carousel-container">
+              <img src="static/product 21.png" alt="Product Image">
+            </div>
             <div class="card-body">
               <p class="card-text">Strong, wild, and unforgettable, Neanderthal takes you back to nature. With earthy wood, rugged leather, and smoky tones, this is a scent for those who love adventure and freedom.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -82,7 +109,9 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="static/product 31.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-container">
+              <img src="static/product 31.jpg" alt="Product Image">
+            </div>
             <div class="card-body">
               <p class="card-text">Soft and elegant, Silken Mists is a fragrance that feels like a gentle hug. It blends the sweetness of jasmine, cool lavender, and warm musk to give you a calming, graceful touch every day. Available as a pack of 5 to enjoy or share!</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -97,7 +126,9 @@
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="static/product 4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-container">
+              <img src="static/product 4.jpg" alt="Product Image">
+            </div>
             <div class="card-body">
               <p class="card-text">Bring springtime to life with Soffio Bloom. Fresh peonies, soft roses, and a crisp apple scent come together to brighten your day and add a cheerful, floral vibe wherever you go.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -111,7 +142,9 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="static/product 5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-container">
+              <img src="static/product 5.jpg" alt="Product Image">
+            </div>
             <div class="card-body">
               <p class="card-text">Step into a tropical paradise with Mango Dusk. The juicy scent of ripe mango, creamy coconut, and sweet vanilla will remind you of golden sunsets and relaxing summer nights.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -125,7 +158,9 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="static/product 6.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-container">
+              <img src="static/product 6.jpg" alt="Product Image">
+            </div>
             <div class="card-body">
               <p class="card-text">Treat yourself to Bourbon Bliss, a warm and rich fragrance inspired by aged bourbon. With notes of caramel and smoky oak, it’s the perfect scent to add charm and sophistication to your day.</p>
               <div class="d-flex justify-content-between align-items-center">

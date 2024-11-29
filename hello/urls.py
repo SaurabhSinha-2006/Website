@@ -24,3 +24,4 @@ urlpatterns = [
     path('', include('home.urls'))
 ] + static(settings.STATIC_URL)
 
+handler404 = 'home.views.error_404_view'

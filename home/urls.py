@@ -22,3 +22,5 @@ urlpatterns = [
 admin.site.site_header = "Saurabh Admin"
 admin.site.site_title = "Saurabh Admin Portal"
 admin.site.index_title = "Welcome to Saurabh E-commerce"
+
+handler404 = 'home.views.error_404_view'
